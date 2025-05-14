@@ -1,55 +1,76 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio – قاسم</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>قاسم – Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
-      background: #f4f4f4;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background: #222;
-      color: #fff;
-      padding: 20px;
+      background: linear-gradient(90deg, #007acc, #00c6ff);
+      color: white;
+      padding: 40px 20px;
       text-align: center;
     }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
     nav a {
-      color: #fff;
+      color: white;
       margin: 0 15px;
       text-decoration: none;
+      font-weight: bold;
     }
     main {
-      padding: 40px;
-      max-width: 800px;
+      padding: 40px 20px;
+      max-width: 1000px;
       margin: auto;
     }
     section {
-      margin-bottom: 40px;
-    }
-    h2 {
-      color: #444;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #222;
-      color: #ccc;
+      margin-bottom: 50px;
     }
     .button {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
       background: #007acc;
-      color: #fff;
+      color: white;
+      padding: 12px 25px;
       text-decoration: none;
       border-radius: 5px;
+      margin-top: 15px;
+      transition: background 0.3s;
     }
     .button:hover {
-      background: #005f99;
+      background: #005a99;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    footer {
+      text-align: center;
+      background: #222;
+      color: #bbb;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -58,6 +79,7 @@
 <header>
   <h1>قاسم – Mein Portfolio</h1>
   <nav>
+    <a href="#ueber">Über mich</a>
     <a href="#projekte">Projekte</a>
     <a href="#lebenslauf">Lebenslauf</a>
     <a href="blog.html">Blog</a>
@@ -65,5 +87,39 @@
 </header>
 
 <main>
-  <section>
+  <section id="ueber">
     <h2>Über mich</h2>
+    <p>Ich bin قاسم, ein IT-Techniker mit Fokus auf Netzwerke, Server und Webentwicklung. Auf dieser Seite findest du meine Projekte, meinen Lebenslauf und Blogbeiträge.</p>
+  </section>
+
+  <section id="projekte">
+    <h2>Projekte</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>VPN-Server mit WireGuard</h3>
+        <p>Installation und Konfiguration eines sicheren VPN-Servers auf Debian für Firmennetzwerke.</p>
+      </div>
+      <div class="card">
+        <h3>Veeam Backup-Integration</h3>
+        <p>Einrichtung von Backup-Jobs und Notfallwiederherstellung in virtuellen Umgebungen.</p>
+      </div>
+      <div class="card">
+        <h3>GitHub Pages Portfolio</h3>
+        <p>Eigene Website mit HTML/CSS und kostenlosem Hosting auf GitHub Pages erstellt.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="lebenslauf">
+    <h2>Lebenslauf</h2>
+    <p>Du kannst meinen Lebenslauf hier als PDF herunterladen:</p>
+    <a class="button" href="lebenslauf.pdf" download>📄 Lebenslauf herunterladen</a>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 قاسم – Alle Rechte vorbehalten.
+</footer>
+
+</body>
+</html>
