@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>قاسم – Portfolio</title>
+  <title>Blog – قاسم</title>
   <style>
     * {
       margin: 0;
@@ -34,36 +34,18 @@
     }
     main {
       padding: 40px 20px;
-      max-width: 1000px;
+      max-width: 800px;
       margin: auto;
     }
-    section {
-      margin-bottom: 50px;
-    }
-    .button {
-      display: inline-block;
-      background: #007acc;
-      color: white;
-      padding: 12px 25px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 15px;
-      transition: background 0.3s;
-    }
-    .button:hover {
-      background: #005a99;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .card {
+    article {
       background: white;
-      padding: 20px;
       border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    article h2 {
+      margin-bottom: 10px;
     }
     footer {
       text-align: center;
@@ -77,49 +59,30 @@
 <body>
 
 <header>
-  <h1>قاسم – Mein Portfolio</h1>
+  <h1>Mein Blog</h1>
   <nav>
-    <a href="#ueber">Über mich</a>
-    <a href="#projekte">Projekte</a>
-    <a href="#lebenslauf">Lebenslauf</a>
-    <a href="blog.html">Blog</a>
+    <a href="index.html">Zurück zur Startseite</a>
   </nav>
 </header>
 
 <main>
-  <section id="ueber">
-    <h2>Über mich</h2>
-    <p>Ich bin قاسم, ein IT-Techniker mit Fokus auf Netzwerke, Server und Webentwicklung. Auf dieser Seite findest du meine Projekte, meinen Lebenslauf und Blogbeiträge.</p>
-  </section>
+  <article>
+    <h2>📌 Warum ich GitHub Pages liebe</h2>
+    <p><em>15. Mai 2025</em></p>
+    <p>GitHub Pages ist eine der einfachsten Möglichkeiten, kostenlos eine Website zu hosten. Alles, was du brauchst, ist HTML und ein Repository. Ideal für Entwickler, Portfolios und technische Dokus!</p>
+  </article>
 
-  <section id="projekte">
-    <h2>Projekte</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>VPN-Server mit WireGuard</h3>
-        <p>Installation und Konfiguration eines sicheren VPN-Servers auf Debian für Firmennetzwerke.</p>
-      </div>
-      <div class="card">
-        <h3>Veeam Backup-Integration</h3>
-        <p>Einrichtung von Backup-Jobs und Notfallwiederherstellung in virtuellen Umgebungen.</p>
-      </div>
-      <div class="card">
-        <h3>GitHub Pages Portfolio</h3>
-        <p>Eigene Website mit HTML/CSS und kostenlosem Hosting auf GitHub Pages erstellt.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="lebenslauf">
-    <h2>Lebenslauf</h2>
-    <p>Du kannst meinen Lebenslauf hier als PDF herunterladen:</p>
-    <a class="button" href="lebenslauf.pdf" download>📄 Lebenslauf herunterladen</a>
-  </section>
+  <article>
+    <h2>💡 Meine Erfahrung mit WireGuard VPN</h2>
+    <p><em>10. Mai 2025</em></p>
+    <p>WireGuard ist schnell, sicher und super einfach einzurichten. Ich habe es erfolgreich bei einem Kundenprojekt eingesetzt, um sicheren Fernzugriff zu ermöglichen.</p>
+  </article>
 </main>
 
 <footer>
-  &copy; 2025 قاسم – Alle Rechte vorbehalten.
+  &copy; 2025 قاسم – Alle Blogbeiträge sind mein persönlicher Inhalt.
 </footer>
 
 </body>
 </html>
+
