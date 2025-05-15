@@ -60,7 +60,7 @@
       border-radius: 5px;
       font-size: 1em;
       cursor: pointer;
-      transition: background 0.3s;
+      transition: background 0.3s ease;
     }
     button:hover {
       background: #005f99;
@@ -89,7 +89,8 @@
 
 <main>
   <form action="https://formspree.io/f/mwpoadbp" method="POST">
-    <input type="hidden" name="_redirect" value="https://adddaaadad.github.io/meine-website/danke.html" />
+    <!-- Eigene Weiterleitung -->
+    <input type="hidden" name="_next" value="https://adddaaadad.github.io/meine-website/danke.html" />
 
     <label for="name"><i class="fas fa-user icon"></i> Name:</label>
     <input type="text" name="name" id="name" required />
