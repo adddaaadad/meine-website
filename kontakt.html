@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – قاسم</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #007acc, #00c6ff);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    button {
+      margin-top: 20px;
+      background: #007acc;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005f99;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #bbb;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Kontakt</h1>
+  <nav>
+    <a href="index.html">Startseite</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+</header>
+
+<main>
+  <form name="kontakt" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="kontakt" />
+    
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" required />
+
+    <label for="email">E-Mail:</label>
+    <input type="email" name="email" id="email" required />
+
+    <label for="nachricht">Nachricht:</label>
+    <textarea name="nachricht" id="nachricht" rows="5" required></textarea>
+
+    <button type="submit">Nachricht senden</button>
+  </form>
+</main>
+
+<footer>
+  &copy; 2025 قاسم – Kontaktseite
+</footer>
+
+</body>
+</html>
